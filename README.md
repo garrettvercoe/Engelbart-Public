@@ -64,14 +64,17 @@ docker-compose up
 
 ```
 
-This should start 4 containers, which gets our frontend and backend working together and linked up. 
-Once the last command has been started up, visit `http://localhost:5001/` in your browser. You should see Engelbart's loading page.
+This command actually runs the application and should start 4 containers, which gets our frontend and backend working together and linked up. Once the last command has been started up, visit `http://localhost:5001/` in your browser. You should see Engelbart's loading page.
 
 &nbsp;
 
 ![loader](/Loader.png)
 
 &nbsp;
+
+Because the app is being run locally instead of on a dedicated online server, you'll need to give it some time to pull Live tweets before it can visualize them.
+Click "Wake up Engelbart" which will pull live Tweets for 5 minutes, and then give you a link to view those Tweets in Cyberspace.
+
 
 Once you run the loader, tweets will start to be read in and processed by Engelbart. We've setup a backend monitoring system utilizing Flower + Celery to help keep track and manage data flows and calls.
 
@@ -81,7 +84,5 @@ Once you run the loader, tweets will start to be read in and processed by Engelb
 
 &nbsp;
 
-Because the app is being run locally instead of on a dedicated online server, you'll need to give it some time to pull Live tweets before it can visualize them.
-Click "Teach Engelbart about Twitter" which will pull live Tweets for 5 minutes, and then give you a link to view those Tweets in Cyberspace.
-
+Once everything is done loading, click "Joing Engelbart in Cyberspace" to hop into the app. If, when you go to the app, it gets stuck on "Loading...", this just means there is a lot of traffic on Twitter currently and it needs a few more seconds to finish processing. After waiting a few seconds, just reload and everything should work.
 
