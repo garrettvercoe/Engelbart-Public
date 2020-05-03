@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Engelbart</title>
+    <link rel="shortcut icon" href="static/assets/favicon.ico" />
+    <link rel="stylesheet" href="static/assets/loader.css" />
+  </head>
+  <body>
+    <img class="engelbart" src="../static/assets/engelbart.gif" />
+    <h2>Engelbart</h2>
+    <div class="desc">
+      Engelbart is a real-time web application that brings online conversations
+      from Twitter into a collective public space. Attention-driven algorithms
+      push us towards people to follow, things to buy, ads to click. In
+      relevance to social media, these algorithms drive us to echo chambers of
+      people who share our same ideologies. Engelbart attempts to refute that by
+      providing a space to view all Twitter activity in an empathic way.
+      <br /><br />Follow Engelbart around in cyberspace to not only see what
+      people are talking about, but how they're talking about it. Then, join in
+      on the conversation yourself on Twitter.
+    </div>
+    <button id="start-bg-job" onclick="style.display = 'none'">
+      Wake up Engelbart
+    </button>
+    <br /><br />
+    <div id="progress"></div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/nanobar/0.4.2/nanobar.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      function start_long_task() {
+        // add task status elements
+        div = $(
+          '<div class="progress"><div></div><div class="percentage">0%</div><div class="run-messages">...</div><div>&nbsp;</div></div>'
+        );
+        $("#progress").append(div);
+
+        // create a progress bar
+        var nanobar = new Nanobar({
+          target: div[0].childNodes[0],
+        });
+
+        // send ajax POST request to start background job
+        $.ajax({
+          type: "POST",
+          url: "/dataload",
+          success: function (data, status, request) {
+            console.log(JSON.stringify(data));
+            status_url = request.getResponseHeader("progressLocation");
+            data_url = data.dataLocation;
+            update_progress(status_url, nanobar, div[0], data_url);
+          },
+          error: function () {
+            alert("Unexpected error");
+          },
+        });
+      }
+      function update_progress(status_url, nanobar, status_div, data_url) {
+        // send GET request to status URL
+        $.getJSON(status_url, function (data) {
+          // update UI
+          percent = parseInt((data["current"] * 100) / data["total"]);
+          nanobar.go(percent);
+          $(status_div.childNodes[1]).text(percent + "%");
+          $(status_div.childNodes[2]).text(data["status"]);
+          if (data["state"] != "PENDING" && data["state"] != "PROGRESS") {
+            if ("result" in data) {
+              // show result
+              $(status_div.childNodes[0]).remove();
+              $(status_div.childNodes[1]).remove();
+              $(status_div.childNodes[2]).remove();
+              $(status_div.childNodes[0]).html(
+                '<a class="launcher" href="/app?data=' +
+                  data_url +
+                  '">Join Engelbart</a>'
+              );
+            } else {
+              // something unexpected happened
+              $(status_div.childNodes[3]).text("Result: " + data["state"]);
+            }
+          } else {
+            // rerun in 2 seconds
+            setTimeout(function () {
+              update_progress(status_url, nanobar, status_div, data_url);
+            }, 2000);
+          }
+        });
+      }
+      $(function () {
+        $("#start-bg-job").click(start_long_task);
+      });
+    </script>
+  </body>
+</html>

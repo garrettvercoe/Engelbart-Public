@@ -1,0 +1,91 @@
+@font-face {
+  font-family: IBM-Semi;
+  src: url(fonts/IBMPlexMono-SemiBold.ttf);
+}
+@font-face {
+  font-family: IBM-Norm;
+  src: url(fonts/IBMPlexMono-Regular.ttf);
+}
+
+html {
+  border: 10px solid #3a4cf8;
+}
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  color: #333;
+  font-size: 1rem;
+  font-family: "IBM-Norm", "Helvetica", "Arial", sans-serif;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h1,
+h2,
+strong {
+  color: #3a4cf8;
+  font-family: "IBM-Semi";
+}
+
+#progress {
+  font-size: 1rem;
+  font-family: "IBM-Norm", monospace;
+}
+button {
+  padding: 0.75rem;
+  margin-top: 2rem;
+  font-family: "IBM-Norm", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  border: 2px solid #3a4cf8;
+
+  color: #3a4cf8;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  /* border: 3px solid #3a4cf8; */
+}
+
+.desc {
+  padding: 0 0 2rem 0;
+}
+
+.launcher {
+  padding: 0.75rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-family: "IBM-Norm", "Helvetica", "Arial", sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #3a4cf8;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.nanobar {
+  height: 16px;
+  border: 2px solid #3a4cf8;
+}
+
+.nanobar .bar {
+  background-color: #3a4cf8;
+  height: 16px !important;
+}
+
+.percentage {
+  padding: 2rem 0 0 0;
+  font-size: 1.1rem;
+  font-family: "IBM-Norm";
+}
+
+.run-messages {
+  font-size: 1.1rem;
+  font-family: "IBM-Semi";
+}
+
+.engelbart {
+  padding-top: 17.5vh;
+  width: 4rem;
+  height: auto;
+}

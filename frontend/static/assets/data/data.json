@@ -1,0 +1,189 @@
+[
+  {
+    "Tag": "covid19",
+    "Sentiment": [
+      0.0,
+      0.09259259259259259,
+      0.12962962962962962,
+      0.48148148148148145,
+      0.05555555555555555,
+      0.14814814814814814,
+      0.05555555555555555,
+      0.037037037037037035
+    ],
+    "Popularity": 49,
+    "Summary": [
+      ":|",
+      " RT @TelefuturoInfo: #EsViral | ?Estoy llorando? [?] #COVID19RT @opsoms:  El distanciamiento fisico no es asilamiento social. [?] #COVID19 [?][?]"
+    ],
+    "Position": [0.25845420360565186, 0.6657208204269409]
+  },
+  {
+    "Tag": "coronavirus",
+    "Sentiment": [
+      0.0,
+      0.1,
+      0.16666666666666666,
+      0.6666666666666666,
+      0.0,
+      0.03333333333333333,
+      0.03333333333333333,
+      0.0
+    ],
+    "Popularity": 27,
+    "Summary": [
+      "Hmm",
+      "#coronavirus #COVI...RT @JamesMelville: UK: 847 #Coronavirus deaths over the past 24 hours."
+    ],
+    "Position": [0.5, 0.3]
+  },
+  {
+    "Tag": "bangbangcon",
+    "Sentiment": [
+      0.045454545454545456,
+      0.0,
+      0.18181818181818182,
+      0.5,
+      0.0,
+      0.045454545454545456,
+      0.09090909090909091,
+      0.13636363636363635
+    ],
+    "Popularity": 21,
+    "Summary": [
+      ":|",
+      " https://t.co/DaiFTgsgL0RT @KimNamjoon00_: ARMYs haciendo un ritual para que YouTube no se vaya a colapsar y no nos deje sin nada:\n\n#BANGBANGCON\n@BTS_twt\nhttps://t...RT @btsweverse_pl: Za niecale 12h zaczyna sie maraton! https://t.co/l64sig5zqO"
+    ],
+    "Position": [0.7306705713272095, 0.762231707572937]
+  },
+  {
+    "Tag": "covid_19",
+    "Sentiment": [0.0, 0.1, 0.0, 0.65, 0.0, 0.2, 0.05, 0.0],
+    "Popularity": 17,
+    "Summary": ["Hmm", "Hmmmmmmmmmm"],
+    "Position": [0.29529523849487305, 0.6626471281051636]
+  },
+  {
+    "Tag": "newmoon",
+    "Sentiment": [
+      0.0,
+      0.0,
+      0.0,
+      0.8666666666666667,
+      0.06666666666666667,
+      0.06666666666666667,
+      0.0,
+      0.0
+    ],
+    "Popularity": 15,
+    "Summary": [":|", " #NewMoon https://t.co/K7c..."],
+    "Position": [0.676998496055603, 0.748662531375885]
+  },
+  {
+    "Tag": "newstarterjustice",
+    "Sentiment": [
+      0.0,
+      0.08333333333333333,
+      0.0,
+      0.4166666666666667,
+      0.08333333333333333,
+      0.3333333333333333,
+      0.0,
+      0.08333333333333333
+    ],
+    "Popularity": 12,
+    "Summary": [":|", "Hmmmmmmmmmm"],
+    "Position": [0.27499502897262573, 0.7999030947685242]
+  },
+  {
+    "Tag": "newstarterfurlough",
+    "Sentiment": [
+      0.0,
+      0.16666666666666666,
+      0.0,
+      0.4166666666666667,
+      0.08333333333333333,
+      0.25,
+      0.0,
+      0.08333333333333333
+    ],
+    "Popularity": 12,
+    "Summary": [":|", "Hmmmmmmmmmm"],
+    "Position": [0.26195257902145386, 0.8091539740562439]
+  },
+  {
+    "Tag": "acnh",
+    "Sentiment": [
+      0.0,
+      0.0,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.0,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.5833333333333334
+    ],
+    "Popularity": 12,
+    "Summary": [":|", " Dm for #dodocode ! #ACNH https://t.co/PBE..."],
+    "Position": [0.7043031454086304, 0.8033412098884583]
+  },
+  {
+    "Tag": "whyruep12",
+    "Sentiment": [
+      0.0,
+      0.1111111111111111,
+      0.1111111111111111,
+      0.0,
+      0.0,
+      0.1111111111111111,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "Popularity": 9,
+    "Summary": [
+      "Hmm",
+      " RT @AlyxzanderRae: JUST FINISHED #WHYRUep12 AND LET ME JUST SAY!"
+    ],
+    "Position": [0.7853443622589111, 0.7869783043861389]
+  },
+  {
+    "Tag": "animalcrossing",
+    "Sentiment": [0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.6],
+    "Popularity": 9,
+    "Summary": ["alrighty", " Dm for #dodocode !"],
+    "Position": [0.4263714551925659, 0.8055369853973389]
+  },
+  {
+    "Tag": "nintendoswitch",
+    "Sentiment": [0.0, 0.0, 0.125, 0.0, 0.0, 0.125, 0.0, 0.75],
+    "Popularity": 8,
+    "Summary": ["Hmm", "Hmmmmmmmmmm"],
+    "Position": [0.38466155529022217, 0.7680051326751709]
+  },
+  {
+    "Tag": "thekingeternalmonarch",
+    "Sentiment": [
+      0.0,
+      0.0,
+      0.14285714285714285,
+      0.5714285714285714,
+      0.0,
+      0.0,
+      0.2857142857142857,
+      0.0
+    ],
+    "Popularity": 7,
+    "Summary": [
+      "Hmm",
+      " RT @iconickdramas: in #thekingeternalmonarch there are two dimensions."
+    ],
+    "Position": [0.3643922805786133, 0.7910093069076538]
+  },
+  {
+    "Tag": "atencionmedicadecalidad",
+    "Sentiment": [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0],
+    "Popularity": 7,
+    "Summary": [":|", "Hmmmmmmmmmm"],
+    "Position": [0.36990875005722046, 0.6891454458236694]
+  }
+]

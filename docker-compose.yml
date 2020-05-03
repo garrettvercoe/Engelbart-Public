@@ -1,0 +1,33 @@
+version: "3"
+services:
+  web:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "5001:5001"
+    environment:
+      FLASK_ENV: development
+    depends_on:
+      - redis
+    volumes:
+      - ./frontend:/api
+  worker:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+  monitor:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+      - "5555:5555"
+    entrypoint: flower
+    command: -A tasks --port=5555 --broker=redis://redis:6379/0
+    depends_on:
+      - redis
+  redis:
+    image: redis
