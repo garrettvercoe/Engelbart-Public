@@ -16,18 +16,18 @@ take the loading page summary and put it here
 To join Engelbart on his crazy adventures into Twitter, you'll have to follow these steps.
 
 1. **Get the code**
-⋅⋅⋅In your terminal, clone this repo.
+  In your terminal, clone this repo.
 ```git clone git@github.com:garrettvercoe/Engelbart-Public.git```
 
 2. **Getting Credentials**
-⋅⋅⋅Since Engelbart pulls directly from Twitter, you'll need to be authenticated on Twitter.  Head over to the [Application management on Twitter](https://developer.twitter.com/en/apps) to create an application.
-⋅⋅⋅Once you've created your application, click on the Keys and access tokens tab to retrieve `your consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`.
+  Since Engelbart pulls directly from Twitter, you'll need to be authenticated on Twitter.  Head over to the [Application management on Twitter](https://developer.twitter.com/en/apps) to create an application.
+  Once you've created your application, click on the Keys and access tokens tab to retrieve `your consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`.
 ![Twitter Authentication Page](https://camo.githubusercontent.com/c8c251be2fdc49039fb26a2e67d89feff3e63d34/68747470733a2f2f7370617469652e6769746875622e696f2f747769747465722d73747265616d696e672d6170692f696d616765732f747769747465722e6a7067)
 
-⋅⋅⋅kjdncjd- Where it goes ---.SDMkm
+  kjdncjd- Where it goes ---.SDMkm
 
 3. **Install Docker**
-⋅⋅⋅Download [Docker](https://docs.docker.com/get-docker/) for your operating system and make sure that it's running for the next step.
+  Download [Docker](https://docs.docker.com/get-docker/) for your operating system and make sure that it's running for the next step.
 
 ⚡️ Running Engelbart
 ---
