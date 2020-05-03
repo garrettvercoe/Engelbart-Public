@@ -30,9 +30,12 @@ To join Engelbart on his crazy adventures into Twitter, you'll have to follow th
   
   Once you've created your application, click on the Keys and access tokens tab to retrieve `your consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`.
   &nbsp;
+  
 ![Twitter Authentication Page](https://camo.githubusercontent.com/c8c251be2fdc49039fb26a2e67d89feff3e63d34/68747470733a2f2f7370617469652e6769746875622e696f2f747769747465722d73747265616d696e672d6170692f696d616765732f747769747465722e6a7067)
 &nbsp;
+
   ![auth](/auth.png)
+  
 &nbsp;
 3. **Install Docker**
 
@@ -65,12 +68,19 @@ This should start 4 containers, which gets our frontend and backend working toge
 Once the last command has been started up, visit `http://localhost:5001/` in your browser. You should see Engelbart's loading page.
 
 &nbsp;
+
 ![loader](/Loader.png)
+
 &nbsp;
+
 Once you run the loader, tweets will start to be read in and processed by Engelbart. We've setup a backend monitoring system utilizing Flower + Celery to help keep track and manage data flows and calls.
+
 &nbsp;
+
 ![monitoring](/monitoring.png)
+
 &nbsp;
+
 Because the app is being run locally instead of on a dedicated online server, you'll need to give it some time to pull Live tweets before it can visualize them.
 Click "Teach Engelbart about Twitter" which will pull live Tweets for 5 minutes, and then give you a link to view those Tweets in Cyberspace.
 
