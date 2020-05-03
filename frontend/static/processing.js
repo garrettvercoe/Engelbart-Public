@@ -199,7 +199,7 @@ function draw() {
         square(Clusters[i].xDest-this.size*radius, Clusters[i].yDest-this.size*radius, this.size*radius*2, 3, 3, 3, 3);
         pop();
 
-        let tagLength = Clusters[i].tag.length;
+        let tagLength = Clusters[i].tag.length + 1;
         let size = (tagLength*9)+7;
 
         push();
