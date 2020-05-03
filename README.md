@@ -55,13 +55,16 @@ cd Engelbart-Public
 
 ```
 
+We use Docker for ensuring a stable build across platforms. 
+
+
 ```
 
 docker-compose build
 
 ```
 
-We use Docker for ensuring a stable build across platforms. This will install the dependencies for this project on a virtual machine that will run the app.
+This will install the dependencies for this project on a virtual machine that will run the app.
 
 ```
 
