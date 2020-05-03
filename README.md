@@ -84,7 +84,7 @@ Because the app is being run locally instead of on a dedicated online server, yo
 Click "Wake up Engelbart" which will pull live Tweets for 5 minutes, and then give you a link to view those Tweets in Cyberspace.
 
 
-Once you run the loader, tweets will start to be read in and processed by Engelbart. We've setup a backend monitoring system utilizing Flower + Celery to help keep track and manage data flows and calls.
+Once you run the loader, tweets will start to be read in and processed by Engelbart. We've setup a backend monitoring system utilizing Flower + Celery to help keep track and manage data flows and calls. This dashboard can be accessed at `localhost:5555`
 
 &nbsp;
 
@@ -94,3 +94,5 @@ Once you run the loader, tweets will start to be read in and processed by Engelb
 
 Once everything is done loading, click "Joing Engelbart in Cyberspace" to hop into the app. If, when you go to the app, it gets stuck on "Loading...", this just means there is a lot of traffic on Twitter currently and it needs a few more seconds to finish processing. After waiting a few seconds, just reload and everything should work.
 
+
+&nbsp;
