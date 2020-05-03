@@ -37,12 +37,25 @@ To join Engelbart on his crazy adventures into Twitter, you'll have to follow th
 ⚡️ Running Engelbart
 ---
 
-```cd Engelbart-Public```
-```docker-compose build```
+```
+
+cd Engelbart-Public
+
+```
+
+```
+
+docker-compose build
+
+```
 
 We use Docker for ensuring a stable build across platforms. This will install the dependencies for this project on a virtual machine that will run the app.
 
-```docker-compose up```
+```
+
+docker-compose up
+
+```
 
 This should start 4 containers, which gets our frontend and backend working together and linked up. 
 Once the last command has been started up, visit `http://localhost:5001/` in your browser. You should see Engelbart's loading page.
