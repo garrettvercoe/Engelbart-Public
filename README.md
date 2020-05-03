@@ -32,6 +32,11 @@ To join Engelbart on his crazy adventures into Twitter, you'll have to follow th
   &nbsp;
   
 ![Twitter Authentication Page](https://camo.githubusercontent.com/c8c251be2fdc49039fb26a2e67d89feff3e63d34/68747470733a2f2f7370617469652e6769746875622e696f2f747769747465722d73747265616d696e672d6170692f696d616765732f747769747465722e6a7067)
+
+&nbsp;
+
+Then, go to `tasks.py` in the backend, and edit the lines below with your new credentials from Twitter.
+
 &nbsp;
 
   ![auth](/auth.png)
