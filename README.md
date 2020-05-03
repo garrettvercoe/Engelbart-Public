@@ -2,7 +2,7 @@
 
 Engelbart is a real-time web application that brings online conversations from Twitter into a collective public space. Attention-driven algorithms push us towards people to follow, things to buy, ads to click. In relevance to social media, these algorithms drive us to echo chambers of people who share our same ideologies. Engelbart attempts to refute that by providing a space to view all Twitter activity in an empathic way. Follow Engelbart around in cyberspace to not only see what people are talking about, but how they're talking about it. Then, join in on the conversation yourself on Twitter.
 
-
+![cover](/Engelbart.png)
 ✨ Features
 ---
 
@@ -60,7 +60,7 @@ docker-compose up
 This should start 4 containers, which gets our frontend and backend working together and linked up. 
 Once the last command has been started up, visit `http://localhost:5001/` in your browser. You should see Engelbart's loading page.
 
-**Loading Image**
+![loader](/Loader.png)
 
 Because the app is being run locally instead of on a dedicated online server, you'll need to give it some time to pull Live tweets before it can visualize them.
 Click "Teach Engelbart about Twitter" which will pull live Tweets for 5 minutes, and then give you a link to view those Tweets in Cyberspace.
