@@ -6,10 +6,10 @@ take the loading page summary and put it here
 
 ✨ Features
 ---
-View live, real-time Twitter conversations
-Discover the most popular topics currently being talked about
-Find out how people are feeling towards today's topics
-Join in on the conversations yourself
+* View live, real-time Twitter conversations
+* Discover the most popular topics currently being talked about
+* Find out how people are feeling towards today's topics
+* Join in on the conversations yourself
 
 🚀 Getting Started
 ---
